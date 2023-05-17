@@ -1,19 +1,18 @@
 # PicoDebounceButton
 
-This is the PicoDebounceButton project.
+This is a small library for debouncing button presses on the Raspberry Pi Pico, using the Pico SDK. It is inspired by [Bounce2](https://github.com/thomasfredericks/Bounce2).
 
-# Building and installing
+## Adding this library to your project
 
-See the [BUILDING](BUILDING.md) document.
+If you have a project called `SimplePicoMidiController`, you can link this library in your CMakeLists.txt like so (assuming you downloaded the library and placed it in the path noted below):  
+
+```cmake
+# Add Debounce
+set(PICO_DEBOUNCE_PATH "include/PicoDebounceButton")
+add_subdirectory(${PICO_DEBOUNCE_PATH})
+target_link_libraries(SimplePicoMidiController PicoDebounceButton::PicoDebounceButton)
+```
 
 # Contributing
 
 See the [CONTRIBUTING](CONTRIBUTING.md) document.
-
-# Licensing
-
-<!--
-Please go to https://choosealicense.com/licenses/ and choose a license that
-fits your needs. The recommended license for a project of this type is the
-Boost Software License 1.0.
--->
