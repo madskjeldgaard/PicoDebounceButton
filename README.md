@@ -1,6 +1,6 @@
 # PicoDebounceButton
 
-This is a small library for debouncing button presses on the Raspberry Pi Pico, using the Pico SDK. It is inspired by [Bounce2](https://github.com/thomasfredericks/Bounce2).
+This is a small library for debouncing button presses on the Raspberry Pi Pico, using the [Pico C++ SDK](https://github.com/raspberrypi/pico-sdk). It is inspired by [Bounce2](https://github.com/thomasfredericks/Bounce2).
 
 ## Adding this library to your project
 
