@@ -2,6 +2,10 @@
 
 This is a small library for debouncing button presses on the Raspberry Pi Pico, using the [Pico C++ SDK](https://github.com/raspberrypi/pico-sdk). It is inspired by [Bounce2](https://github.com/thomasfredericks/Bounce2).
 
+## Example
+
+For an example on how to use this project, see [this](https://github.com/madskjeldgaard/SimplePicoMidiController).
+
 ## Adding this library to your project
 
 ### Using CPM
