@@ -4,6 +4,16 @@ This is a small library for debouncing button presses on the Raspberry Pi Pico, 
 
 ## Adding this library to your project
 
+### Using CPM
+The easiest way to use this in your project is to install [it using CPM](https://github.com/cpm-cmake/CPM.cmake). Add the following lines to your CMakeLists.txt. This will automatically download and include it in your CMake setup.
+
+```cmake
+# Add Debounce
+CPMAddPackage("gh:madskjeldgaard/PicoDebounceButton#main")
+target_link_libraries(SimplePicoMidiController PicoDebounceButton::PicoDebounceButton)
+```
+
+### Manually
 If you have a project called `SimplePicoMidiController`, you can link this library in your CMakeLists.txt like so (assuming you downloaded the library and placed it in the path noted below):  
 
 ```cmake
